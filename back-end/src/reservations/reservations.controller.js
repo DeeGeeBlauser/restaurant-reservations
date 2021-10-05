@@ -127,9 +127,9 @@ async function validateReservationId(req, res, next) {
   }
 
   res.locals.reservation = reservation;
-  console.log(reservation);
+  
   next();
-  console.log("Validate ResID end");
+  
 }
 
 async function validateUpdateBody(req, res, next) {
@@ -186,8 +186,7 @@ async function create(req, res) {
 
 async function update(req, res) {
   
-  console.log(res.locals.reservation);
-  console.log(req.body.data);
+
   await service.update(
     res.locals.reservation.reservation_id,
     req.body.data.status

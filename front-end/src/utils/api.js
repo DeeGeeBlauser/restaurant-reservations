@@ -87,10 +87,8 @@ export async function editReservation(reservation_id, reservation, signal) {
 }
 
 export async function updateReservationStatus(reservation_id, status, signal) {
-  console.log(reservation_id);
-  console.log(status);
   const url = `${API_BASE_URL}/reservations/${reservation_id}/status`;
-  console.log(url);
+
   const body = JSON.stringify({ data: { status: status } });
 
   return await fetchJson(url, { headers, signal, method: "PUT", body }, []);
@@ -111,8 +109,6 @@ export async function createTable(table, signal) {
 }
 
 export async function seatTable(reservation_id, table_id, signal) {
-  console.log("res", reservation_id);
-  console.log("table", table_id);
   const url = `${API_BASE_URL}/tables/${table_id}/seat`;
 
   const body = JSON.stringify({ data: { reservation_id: reservation_id } });

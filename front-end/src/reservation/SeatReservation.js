@@ -33,16 +33,13 @@ function SeatReservation({ loadDashboard, tables }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Test 1");
+  
     const abortController = new AbortController();
 
     if (validateSeat()) {
-      console.log("Validated");
+    
       seatTable(reservation_id, table_id, abortController.signal)
-        .then((data) => {
-          console.log("Test 2", data);
-          return loadDashboard(data);
-        })
+        .then(loadDashboard)
         .then(() => history.push(`/dashboard`))
         .catch(setApiError);
     }
