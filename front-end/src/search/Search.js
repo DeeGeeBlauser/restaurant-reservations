@@ -36,7 +36,7 @@ function Search() {
       ))
     ) : (
       <tr>
-        <td>No reservation found</td>
+        <td>No reservations found</td>
       </tr>
     );
   };
