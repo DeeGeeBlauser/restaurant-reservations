@@ -206,8 +206,7 @@ function Reservation({ loadDashboard, edit }) {
           id="tel"
           name="mobile_number"
           type="tel"
-          placeholder="xxx-xxx-xxxx"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="xxx-xxxx"
           value={formData.mobile_number}
           onChange={handleChange}
           required
