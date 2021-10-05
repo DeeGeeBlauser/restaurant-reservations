@@ -184,7 +184,6 @@ function Reservation({ loadDashboard, edit }) {
           placeholder="First Name"
           value={formData.first_name}
           onChange={handleChange}
-          required
         />
       </div>
       <div className="form-group">
@@ -196,7 +195,6 @@ function Reservation({ loadDashboard, edit }) {
           placeholder="Last Name"
           value={formData.last_name}
           onChange={handleChange}
-          required
         ></input>
       </div>
       <div className="form-group">
@@ -209,7 +207,6 @@ function Reservation({ loadDashboard, edit }) {
           placeholder="xxx-xxxx"
           value={formData.mobile_number}
           onChange={handleChange}
-          required
         />
       </div>
       <div className="form-group">
@@ -221,7 +218,6 @@ function Reservation({ loadDashboard, edit }) {
           type="date"
           value={formData.reservation_date}
           onChange={handleChange}
-          required
         />
       </div>
       <div className="form-group">
@@ -233,7 +229,6 @@ function Reservation({ loadDashboard, edit }) {
           type="time"
           value={formData.reservation_time}
           onChange={handleChange}
-          required
         />
       </div>
       <div className="form-group">
@@ -247,7 +242,6 @@ function Reservation({ loadDashboard, edit }) {
           onChange={handleChange}
           min="1"
           step="1"
-          required
         />
       </div>
       <br />
