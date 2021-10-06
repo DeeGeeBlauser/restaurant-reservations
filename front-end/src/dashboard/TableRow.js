@@ -1,9 +1,15 @@
 import React from "react";
 import { finishTable } from "../utils/api";
 
+/**
+* Represents a row of data representing a table for the list of tables
+*/
 function TableRow({ table, loadDashboard }) {
   if (!table) return null;
 
+  /**
+  * Called to finish a table that is already seated
+  */
   const handleFinish = () => {
     if (
       window.confirm(

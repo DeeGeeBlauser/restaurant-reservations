@@ -3,8 +3,9 @@ import { useHistory } from "react-router-dom";
 import ErrorAlert from "../layout/ErrorAlert";
 import { createTable } from "../utils/api";
 
-//Page that allows user to create a new table
-
+/**
+* Page that allows user to create a new table
+*/
 function NewTable({ loadDashboard }) {
   const history = useHistory();
   const initialFormState = {
@@ -15,7 +16,9 @@ function NewTable({ loadDashboard }) {
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({ ...initialFormState });
 
-  //whenever a user makes a change to the form, update the form
+  /**
+  * Whenever a user makes a change to the form, update the form
+  */ 
   const handleChange = ({ target }) => {
     setFormData({
       ...formData,
@@ -24,7 +27,9 @@ function NewTable({ loadDashboard }) {
     });
   };
 
-  //whenever a user submits the form, validate and make the API call
+  /**
+  * Whenever a user submits the form, validate and make the API call
+  */
   const handleSubmit = (event) => {
     event.preventDefault();
     const abortController = new AbortController();
@@ -39,7 +44,9 @@ function NewTable({ loadDashboard }) {
     return () => abortController.abort();
   };
 
-  //make sure all fields are filled in and correct
+  /**
+  * Make sure all fields are filled in and correct
+  */
   function validateFields() {
     let foundError = null;
 

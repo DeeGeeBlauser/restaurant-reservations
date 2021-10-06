@@ -3,7 +3,9 @@ import { useHistory, useParams } from "react-router-dom";
 import ErrorAlert from "../layout/ErrorAlert";
 import { listReservations, seatTable } from "../utils/api";
 
-//On this page, the user chooses a table to seat a reservation at.
+/**
+* On this page, the user chooses a table to seat a reservation at
+*/
 function SeatReservation({ loadDashboard, tables }) {
   const history = useHistory();
 
@@ -15,6 +17,9 @@ function SeatReservation({ loadDashboard, tables }) {
 
   const { reservation_id } = useParams();
 
+  /**
+  * When page first renders, make API call to get all reservations
+  */
   useEffect(() => {
     const abortController = new AbortController();
 
@@ -29,8 +34,14 @@ function SeatReservation({ loadDashboard, tables }) {
 
   if (!tables || !reservations) return null;
 
+  /**
+  * Whenever a change is made to the form, update the state
+  */
   const handleChange = ({ target }) => setTableId(target.value);
 
+  /**
+  * Whenever form is submitted, validate and make API call
+  */
   const handleSubmit = (event) => {
     event.preventDefault();
   
@@ -47,6 +58,9 @@ function SeatReservation({ loadDashboard, tables }) {
     return () => abortController.abort();
   };
 
+  /**
+  * Make sure reservation is able to be seated at a particular table
+  */
   function validateSeat() {
     const foundErrors = [];
 
