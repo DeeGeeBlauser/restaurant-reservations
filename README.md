@@ -1,10 +1,10 @@
 # Restaurant Reservation System - Periodic Tables
 
 ## Table of contents
-* [General Info] (#general-info)
-* [REST API] (#rest-api)
-* [Technologies] (#technologies)
-* [Installation] (#installation)
+* [General Info](#general-info)
+* [REST API](#rest-api)
+* [Technologies](#technologies)
+* [Installation](#installation)
 
 ## General Info
 
@@ -12,7 +12,7 @@
 > The software is used only by restaurant personnel when a customer calls to request a reservation.
 > At this point, the customers will not access the system online.
 
-##Rest API
+## Rest API
 
 > The REST API for the Periodic Tables Reservation System App is described below.
 
