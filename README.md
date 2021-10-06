@@ -24,6 +24,10 @@
 >   Seating the reservation will take the user to a new page, where they will select the table to seat the reservation at.\
 >   If a table is currently occupied, the user may free up the table by clicking the "Finish" option within the table's row\
 >   \
+<img width="1433" alt="Screen Shot 2021-10-06 at 2 42 08 PM" src="https://user-images.githubusercontent.com/82486225/136273383-132f4103-e9d9-452d-9639-2cd28bfbb2c0.png">
+
+
+
 > "Search" will allow the user to search for a reservation by mobile number\
 > "New Reservation" allows the user to create and add a new reservation into the database\
 > "New Table" allows the user to create and add a new table into the database\
