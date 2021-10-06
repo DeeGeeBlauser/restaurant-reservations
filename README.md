@@ -22,21 +22,21 @@
 > "Dashboard" will show all current reservations, along with their status, and all tables, along with their status, for a given day.
 >   If a reservation is shown for the current day, and has not occurred yet, the user may edit, cancel, or seat the reservation.\
 >   Seating the reservation will take the user to a new page, where they will select the table to seat the reservation at.\
->   If a table is currently occupied, the user may free up the table by clicking the "Finish" option within the table's row\
+>   If a table is currently occupied, the user may free up the table by clicking the "Finish" option within the table's row
 
 <img width="1433" alt="Screen Shot 2021-10-06 at 2 42 08 PM" src="https://user-images.githubusercontent.com/82486225/136273383-132f4103-e9d9-452d-9639-2cd28bfbb2c0.png">
 
 
 
-> "Search" will allow the user to search for a reservation by mobile number\
+> "Search" will allow the user to search for a reservation by mobile number
 
 <img width="1429" alt="Screen Shot 2021-10-06 at 2 40 51 PM" src="https://user-images.githubusercontent.com/82486225/136273615-715ef84b-00e0-438e-ba92-fef6353e4df5.png">
 
-> "New Reservation" allows the user to create and add a new reservation into the database\
+> "New Reservation" allows the user to create and add a new reservation into the database
 
 <img width="1429" alt="Screen Shot 2021-10-06 at 2 41 04 PM" src="https://user-images.githubusercontent.com/82486225/136273646-dbdc22cd-da02-4467-b41f-d3be7f170b4d.png">
 
-> "New Table" allows the user to create and add a new table into the database\
+> "New Table" allows the user to create and add a new table into the database
 
 <img width="1403" alt="Screen Shot 2021-10-06 at 2 41 14 PM" src="https://user-images.githubusercontent.com/82486225/136273695-f19e74be-59d8-4ca3-9752-59881585e53f.png">
 
