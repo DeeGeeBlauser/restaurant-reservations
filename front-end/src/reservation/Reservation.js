@@ -25,8 +25,8 @@ function Reservation({ loadDashboard, edit }) {
   });
 
   /**
-  * Makes API call to get all reservations and, if editing, fills out the form
-  */
+   * Makes API call to get all reservations and, if editing, fills out the form
+   */
   useEffect(() => {
     if (edit) {
       if (!reservation_id) return null;
@@ -71,8 +71,8 @@ function Reservation({ loadDashboard, edit }) {
   }, [edit, reservation_id]);
 
   /**
-  * Whenever user makes change to form, update the state
-  */
+   * Whenever user makes change to form, update the state
+   */
   const handleChange = ({ target }) => {
     setFormData({
       ...formData,
@@ -82,8 +82,8 @@ function Reservation({ loadDashboard, edit }) {
   };
 
   /**
-  * Whenever user submits form, validate then make API call
-  */
+   * Whenever user submits form, validate then make API call
+   */
   const handleSubmit = (event) => {
     event.preventDefault();
     const abortController = new AbortController();
@@ -113,8 +113,8 @@ function Reservation({ loadDashboard, edit }) {
   };
 
   /**
-  * Make sure all fields exist and are filled out correctly
-  */
+   * Make sure all fields exist and are filled out correctly
+   */
   function validateFields(foundErrors) {
     for (const field in formData) {
       if (formData[field] === "") {
@@ -127,8 +127,8 @@ function Reservation({ loadDashboard, edit }) {
   }
 
   /**
-  * Make sure date and time of reservation work with restaurant schedule
-  */
+   * Make sure date and time of reservation work with restaurant schedule
+   */
   function validateDate(foundErrors) {
     const reserveDate = new Date(
       `${formData.reservation_date}T${formData.reservation_time}:00.000`
@@ -202,6 +202,7 @@ function Reservation({ loadDashboard, edit }) {
           className="form-control"
           id="name"
           name="last_name"
+          type="text"
           placeholder="Last Name"
           value={formData.last_name}
           onChange={handleChange}
