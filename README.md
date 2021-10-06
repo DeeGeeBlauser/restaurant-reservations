@@ -40,6 +40,12 @@
 
 #### Response
 
+```
+Status: 200 OK
+
+ []
+```
+
 ### Create new reservation
 
 #### Request
@@ -47,6 +53,23 @@
 `POST /reservations/`
 
 #### Response
+
+```
+Status: 201 Created
+
+{
+            "reservation_id": 1,
+            "created_at": "2020-12-10T08:30:32.326Z",
+            "updated_at": "2020-12-10T08:30:32.326Z",
+            "first_name": "Rick",
+            "last_name": "Sanchez",
+            "mobile_number": "202-555-0164",
+            "people": 6,
+            "reservation_date": "2020-12-31T06:00:00.000Z",
+            "reservation_time": "20:00:00",
+            "status": null
+        }
+```
 
 ### Get information on specific reservation by reservation_id
 
@@ -56,6 +79,23 @@
 
 #### Response
 
+```
+Status: 200 OK
+
+{
+        "reservation_id": 2,
+        "created_at": "2020-12-10T08:31:32.326Z",
+        "updated_at": "2020-12-10T08:31:32.326Z",
+        "first_name": "Frank",
+        "last_name": "Palicky",
+        "mobile_number": "202-555-0153",
+        "people": 1,
+        "reservation_date": "2020-12-30T06:00:00.000Z",
+        "reservation_time": "20:00:00",
+        "status": null
+    }
+```
+
 ### Edit existing reservation by reservation_id
 
 #### Request
@@ -63,6 +103,24 @@
 `PUT /reservations/:reservation_id`
 
 #### Response
+
+```
+Status: 200 OK
+
+{
+        "reservation_id": 2,
+        "created_at": "2020-12-10T08:31:32.326Z",
+        "updated_at": "2020-12-10T08:31:32.326Z",
+        "first_name": "Frank",
+        "last_name": "Palicky",
+        "mobile_number": "202-555-0153",
+        "people": 4,
+        "reservation_date": "2020-12-30T06:00:00.000Z",
+        "reservation_time": "20:00:00",
+        "status": null
+    }
+
+```
 
 ### Update reservation status by reservation_id
 
@@ -72,6 +130,24 @@
 
 #### Response
 
+```
+Status: 200 OK
+
+{
+        "reservation_id": 2,
+        "created_at": "2020-12-10T08:31:32.326Z",
+        "updated_at": "2020-12-10T08:31:32.326Z",
+        "first_name": "Frank",
+        "last_name": "Palicky",
+        "mobile_number": "202-555-0153",
+        "people": 4,
+        "reservation_date": "2020-12-30T06:00:00.000Z",
+        "reservation_time": "20:00:00",
+        "status": "canceled"
+    }
+
+```
+
 ### Get list of tables
 
 #### Request
@@ -79,6 +155,12 @@
 `GET /tables/`
 
 #### Response
+
+```
+Status: 200 OK
+
+ []
+```
 
 ### Create new table
 
@@ -88,6 +170,20 @@
 
 #### Response
 
+```
+Status: 201 Created
+
+ {
+            "table_id": 3,
+            "table_name": "#1",
+            "capacity": 6,
+            "status": "free",
+            "reservation_id": null,
+            "created_at": "2021-10-01T16:29:47.220Z",
+            "updated_at": "2021-10-01T16:29:47.220Z"
+        }
+```
+
 ### Update table status to be seated
 
 #### Request
@@ -95,6 +191,20 @@
 `PUT /tables/:table_id/seat`
 
 #### Response
+
+```
+Status: 200 OK
+
+{
+            "table_id": 3,
+            "table_name": "#1",
+            "capacity": 6,
+            "status": "seated",
+            "reservation_id": null,
+            "created_at": "2021-10-01T16:29:47.220Z",
+            "updated_at": "2021-10-01T16:29:47.220Z"
+        }
+```
 
 ### Update table status to finished
 
@@ -105,12 +215,29 @@
 #### Response
 
 
+```
+Status: 200 OK
+
+{
+            "table_id": 3,
+            "table_name": "#1",
+            "capacity": 6,
+            "status": "finished",
+            "reservation_id": null,
+            "created_at": "2021-10-01T16:29:47.220Z",
+            "updated_at": "2021-10-01T16:29:47.220Z"
+        }
+```
+
+
 ## Technologies
 Project is created with:
 * React.js
 * CSS
+* Bootstrap
 * Node.js
 * Express
+* Knex
 * PostgreSQL
 
 
