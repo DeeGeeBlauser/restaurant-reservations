@@ -2,8 +2,8 @@
 
 ## Table of contents
 - [General Info](#general-info)
--  - [Link to live application](#link-to-live-application)
--  - [Summary of application](#summary-of-application)
+  - [Link to live application](#link-to-live-application)
+  - [Summary of application](#summary-of-application)
 - [REST API](#rest-api)
 - [Technologies](#technologies)
 - [Installation](#installation)
@@ -18,10 +18,12 @@
 > The software is used only by restaurant personnel when a customer calls to request a reservation.
 > At this point, the customers will not access the system online.\
 > The user has access to navigate to four different pages from the MENU\
+> \
 > "Dashboard" will show all current reservations, along with their status, and all tables, along with their status, for a given day.
 >   If a reservation is shown for the current day, and has not occurred yet, the user may edit, cancel, or seat the reservation.\
 >   Seating the reservation will take the user to a new page, where they will select the table to seat the reservation at.\
->   If a table is currently occupied, the user may free up the table by clicking the "Finish" option within the <table>\
+>   If a table is currently occupied, the user may free up the table by clicking the "Finish" option within the table's row\
+>   \
 > "Search" will allow the user to search for a reservation by mobile number\
 > "New Reservation" allows the user to create and add a new reservation into the database\
 > "New Table" allows the user to create and add a new table into the database\
