@@ -113,7 +113,7 @@ function Reservation({ loadDashboard, edit }) {
   };
 
   /**
-   * Make sure all fields exist and are filled out correctly
+   * Make sure all fields exist and that they are filled out correctly
    */
   function validateFields(foundErrors) {
     for (const field in formData) {
