@@ -11,6 +11,7 @@
 ## General Info
 
 ### Link to live application
+> https://db-capstone-front-end.herokuapp.com/dashboard
 
 ### Summary of application
 
